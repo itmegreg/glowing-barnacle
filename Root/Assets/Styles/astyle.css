@@ -1,0 +1,16 @@
+/*
+	Catnip Cafe Audio Style Sheet
+	
+	Author:		Gregory Shackleford
+	Date:		10/13/2021
+	Filename:  	astyle.css
+	
+	Supporting Files: none
+	
+*/
+
+/* Audio styles */
+audio, object, embed {
+	display: block;
+	margin: 15px auto;
+}

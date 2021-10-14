@@ -1,0 +1,169 @@
+/*
+	Catnip Base Style Sheet
+	
+	Author: Gregory Shackleford
+	Date: 10/08/2021
+	Filename:		main.css
+	Supporting Files: none
+	
+*/
+
+/* Display HTML5 structural elements as blocks */
+article, aside, figure, figcaption, footer, header, hgroup,
+section, nav, ul, li {
+	display: block;
+}
+
+/* Set the default page element styles */
+body {
+	margin: 0px auto;
+	width: 800px;
+	background-image: url("../Images/pawprints.jpg");
+	background-color: #cccccc;
+
+}
+
+body * {
+	font-family: Verdana, Geneva, sans-seriff;
+	font-size: 100%;
+	font-weight: inherit;
+	line-height: 1.2em;
+	margin: 2px;
+	padding: 0px;
+	text-decoration: none;
+	vertical-align: baseline;
+	background-color: white;
+}
+
+
+/* Navigation links */
+
+nav ul {
+	list-style: none;
+	margin-top: 5px;
+}
+
+nav li {
+	float: left;
+	width: 19%;
+	text-align: center;
+	border: 1px solid #6F5B3E;
+	margin: 5px 2px 15px 2px;
+}
+
+nav li a {
+	display: block;
+	color: #6F5B3E;
+	text-decoration: none;
+	background-color: white;
+}
+
+nav li a:hover {
+	color: white;
+	background-color: #6F5B3E;
+}
+
+/* h1, h2, p */
+h1 {
+	font-size: 20px;
+	font-weight: normal;
+	letter-spacing: 5px;
+	color: #6F5B3E;
+	margin-top: 15px;
+}
+
+h2 {
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 5px;
+	color: #6F5B3E;
+	margin-top: 15px;
+}
+
+
+p {
+	margin: 7px;
+}
+
+/* main section styles */
+#main {
+	border-top: 2px solid rgb(210, 180, 140);
+}
+
+#main ul {
+	list-style-type: circle;
+	margin-left: 50px;
+	font-size: 11px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#main ul li {
+	margin-bottom: 10px;
+	display: list-item;
+	list-style-type: disc;
+}
+
+#main ul li strong {
+	font-weight: bold;
+	color: rgb(210, 180, 140);
+}
+
+#main img {
+	width: 200px;
+}
+
+
+/* footer styles */
+
+footer {
+	border-top: 2px solid rgb(210, 180, 140);
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+address {
+	font-style: normal;
+	font-size: 10px;
+	text-align: center;
+	padding: 5px;
+}
+
+/* image styles */
+img.banner {
+	top: 10px;
+	margin: 15px;
+	height: 250px;
+}
+
+img.insideCafe {
+	clear: right;
+	float: right;
+	margin: 20px;
+	width: 400px;
+}
+
+img.pawprint {
+	float: right;
+	width: 5px;
+}
+
+img.catPic {
+	width: 200px;
+	height: 150px;
+}
+
+figure {
+  margin:2px;
+  display:inline-block;
+  vertical-align:top;
+}
+
+article figcaption {
+	text-align: center;
+}
+
+article {
+	border-top: 2px solid rgb(210, 180, 140);
+}

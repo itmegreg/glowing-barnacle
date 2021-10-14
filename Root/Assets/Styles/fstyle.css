@@ -1,0 +1,102 @@
+/*
+	Catnip Form Style Sheet
+	
+	Author: Gregory Shackleford
+	Date: 10/08/2021
+	Filename:		main.css
+	Supporting Files: none
+	
+*/
+
+/* Field Set Styles */
+
+fieldset {
+	background-color: rgb(210, 180, 140);
+	border: 1px solid #6F5B3E;
+	float: none;
+	margin: 10px 0px 10px 2.5%;
+	width: 97%;
+}
+.buttons {
+	background-color: white;
+	border: none;
+	width: 95%;
+}
+
+legend {
+	color: white;
+	background-color: #6F5B3E;
+	padding: 5px;
+}
+
+/* Label Styles */
+label {
+	clear: left;
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	margin: 7px 4% 7px 5px;
+	width: 10%;
+	color: white;
+	background-color: #6F5B3E;
+}
+
+/* Input Control Styles */
+input {
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	margin: 7px 0px;
+	width: 50%;
+}
+
+/* Selection List Styles */
+select {
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	margin: 7px 0px;
+}
+
+/* Checkbox Styles */
+input#newsletter {
+	clear: left;
+	width: 25px;
+}
+input#newsletter+label {
+	clear: none;
+	width: auto;
+}
+
+/* Button Styles */
+input[type="submit"] {
+	clear: left;
+}
+input[type="submit"], input[type="reset"] {
+	height: 40px;
+	margin-right: 20px;
+	width: 200px;
+}
+
+/* Validation Styles */
+input:focus, select:focus {
+	background-color: ivory;
+}
+
+input:focus:valid {
+	background: rgb(220, 255, 220) url(go.png) bottom right no-repeat;
+	
+	-o-background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+
+input:focus:invalid {
+	background: rgb(255, 232, 233) url(stop.png) bottom right no-repeat;
+	
+	-o-background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;
+}

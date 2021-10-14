@@ -1,0 +1,33 @@
+/*
+	Catnip Cafe Tables Style Sheet
+	Author: Gregory Shackleford
+	Date: 	10/09/2021
+	
+	Filename: styles.css
+	Supporting Files: none
+*/
+table {
+	font-size: 14px;
+	border-collapse: collapse;
+	border: 10px outset #6F5B3E;
+	margin: 10px auto;
+	width: 400px
+}
+
+thead {
+	background-color: rgb(210, 180, 140);
+}
+
+th, td {
+	border: 1px solid black;
+	vertical-align: top;
+	padding: 5px;
+}
+
+tr td:nth-of-type(2), tr td:nth-of-type(3), tr td:nth-of-type(4) {
+	text-align: right;
+}
+
+.feeColumns {
+	background-color: rgb(220, 202, 152);
+}

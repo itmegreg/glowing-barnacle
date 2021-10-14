@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!--
+	
+		Catnip Website
+		Author: Gregory Shackleford
+		Date: 10/13/2021
+		
+		Filename: contact.html
+		Supporting files: cafebanner.jpg, main.css
+	-->
+	
+	<meta charset="UTF-8" />
+	<title>Contact Us</title>
+	<link href="Assets/Styles/main.css" rel="stylesheet" type="text/css" />
+	<link href="Assets/Styles/fstyle.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		<header>
+			<img src="Assets/Images/cafebanner.jpg" class="banner" alt="Catnip"/>
+		</header>
+		
+		<nav class="horizontal">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="adoption.html">Adoption</a></li>
+				<li><a href="rates.html">Reservations</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		
+		<section id="main">
+			<h1>Contact Us</h1>
+			<script src="Assets/JavaScripts/formsubmit.js"></script>
+			<form name="contactForm" id="contactForm" action="http://www.catnipcafe.com/cgi-bin/contact" method="post">
+			
+			<fieldset id="contactField">
+					<legend>Use the Fields Below to Contact Us</legend>
+					
+					<label for="fName">First Name</label>
+					<input type="text" id="fName" name="fName" required="required" />
+					
+					<label for="lName">Last Name</label>
+					<input type="text" id="lName" name="lName" required="required" />
+					
+					<label for="phone">Phone</label>
+					<input type="tel" id="phone" name="phone" placeholder="(nnn) nnn-nnnn" required="required" 
+					pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+					
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" required="required" />
+					
+					
+			</fieldset>	
+			<fieldset class="buttons">	
+				<input type="checkbox" id="newsletter" name="newsletter" />
+				<label for="newsletter">Please send me a monthly newsletter</label>
+				
+				<input type="submit" value="Send" />
+				<input type="reset" value="Reset" />
+				
+				<img src="Assets/Images/pawprint.jpg" alt="" class="pawprint" />
+			</fieldset>
+			</form>
+			
+			<br />
+		</section>
+		
+
+		<footer>
+			<address>
+				Catnip Cafe &#183;
+				555 North Purrfect St &#183;
+				Los Gatos, CA 95030 &#183;
+				(408) 555 - 3325 &#183;
+				info@catnipcafe.com
+				
+			</address>
+			
+		</footer>
+</html>
